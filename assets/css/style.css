@@ -93,11 +93,14 @@ section {
 
 .side-links {
     position: fixed;
-    right: -80px;
-    top: 40%;
+    top: 16%;
+    right: 0;
+    transform: rotate(90deg);
+    transform-origin: left top 0;
+    white-space: nowrap;
+    width: 20px;
     display: flex;
-    rotate: 90deg;
-    z-index: 999999;
+    z-index: 99;
 }
 
 .side-links svg {
@@ -147,6 +150,11 @@ ul {
     min-height: 80vh;
 }
 
+.disabled:hover{
+    transform: none;
+    cursor: not-allowed;
+}
+
 @media screen and (max-width: 768px) {
     section {
         padding: 50px 25px;
@@ -182,13 +190,12 @@ ul {
     }
 
     .side-links {
-        right: -100px;
-        top: 32%;
-        font-size: smaller;
+        right: 0;
+        top: 16%;
     }
 
     .side-links svg {
-        width: 24%;
+        height: 16px;
     }
 }
 
