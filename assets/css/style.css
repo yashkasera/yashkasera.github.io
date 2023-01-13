@@ -43,7 +43,6 @@ body {
 }
 
 main {
-    margin-top: 16px;
     position: relative;
     overflow: auto;
     min-height: 100vh;
@@ -52,6 +51,7 @@ main {
 section {
     min-height: 100vh;
     padding: 50px 150px;
+    overflow-x: hidden;
 }
 
 .bg-1 {
@@ -150,7 +150,11 @@ ul {
     min-height: 80vh;
 }
 
-.disabled:hover{
+.min-vh-80 {
+    min-height: 80vh;
+}
+
+.disabled:hover {
     transform: none;
     cursor: not-allowed;
 }
